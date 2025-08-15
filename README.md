@@ -38,7 +38,7 @@ Backend (Giả lập):
 ### Installation
 
 \`\`\`bash  
-git clone [repo-url]  
+git clone [https://github.com/icefox2804/Task-Management]  
 cd task-management  
 npm install  
 \`\`\`
