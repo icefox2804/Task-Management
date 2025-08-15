@@ -1,0 +1,137 @@
+/* Theme Sáng (Light) */
+body.light {
+  /* Tên biến theo chức năng */
+  --bg-primary: #ffffff; /* Nền chính (ví dụ: container, card) */
+  --bg-secondary: #f5f7fa; /* Nền phụ (ví dụ: body) */
+  --bg-footer: #2c3e50; /* Nền của footer */
+  --text-primary: #2c3e50; /* Màu chữ chính */
+  --text-secondary: #5a6a7a; /* Màu chữ phụ */
+  --text-on-dark-bg: #ffffff; /* Màu chữ trên nền tối (như footer, button) */
+  --accent-color: #3498db; /* Màu nhấn chính (button, link) */
+  --success-color: #27ae60;
+  --danger-color: #e74c3c;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --spinner-track-color: rgba(0, 0, 0, 0.1);
+  --spinner-color: #2c3e50;
+}
+
+/* Theme Tối (Dark) */
+body.dark {
+  --bg-primary: #2d3748;
+  --bg-secondary: #1a202c;
+  --bg-footer: #1a202c;
+  --text-primary: #f7fafc;
+  --text-secondary: #a0aec0;
+  --text-on-dark-bg: #f7fafc;
+  --accent-color: #63b3ed;
+  --success-color: #68d391;
+  --danger-color: #fc8181;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --spinner-track-color: rgba(255, 255, 255, 0.3);
+  --spinner-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* --- Loading --- */
+.app-loading {
+  min-height: 100vh;
+  background: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container {
+  text-align: center;
+  color: var(--text-primary);
+  padding: 2rem;
+}
+
+.app-logo {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.loading-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--spinner-track-color);
+  border-top: 4px solid var(--spinner-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- Global Error --- */
+.global-error {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* --- Footer --- */
+.app-footer {
+  background: var(--bg-footer);
+  color: var(--text-on-dark-bg);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.app-footer p {
+  margin: 0;
+  opacity: 0.8;
+}

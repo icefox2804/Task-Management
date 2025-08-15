@@ -1,0 +1,77 @@
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.login-form {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.login-title {
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.login-form .form-field {
+    margin-bottom: 10px;
+}
+
+.login-form .form-input {
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box; /* Quan trọng */
+}
+
+.login-form .submit-btn {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 16px rgba(26, 25, 25, 0.4);
+    color: #0f0f0f;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-form .submit-btn:active {
+    transform: scale(0.95);
+}
+
+.login-form .submit-btn:focus {
+    outline: none;
+}
+
+.login-form .submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.login-form .submit-btn:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+.login-form .form-error {
+    color: var(--danger-color);
+    font-size: 12px;
+    text-align: left;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}

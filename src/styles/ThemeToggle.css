@@ -1,0 +1,63 @@
+.theme-toggle-btn {
+    position: relative;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    border: 1px solid var(--text-primary);
+    cursor: pointer;
+    background: transparent;
+    overflow: hidden;
+    padding: 0;
+    transition:
+        background 0.4s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    box-shadow: 0 2px 8px var(--shadow-color);
+    transform: translateY(-2px);
+}
+
+.theme-toggle-btn .icon {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: all 0.4s ease;
+}
+
+.theme-toggle-btn .sun {
+    left: 8px;
+}
+
+.theme-toggle-btn .moon {
+    right: 8px;
+}
+
+/* Light mode */
+.theme-toggle-btn.light {
+    background: var(--bg-primary);
+}
+.theme-toggle-btn.light .sun {
+    transform: translateY(-50%) scale(1) rotate(0deg);
+    opacity: 1;
+}
+.theme-toggle-btn.light .moon {
+    transform: translateY(-50%) scale(0) rotate(-90deg);
+    opacity: 0;
+}
+
+/* Dark mode */
+.theme-toggle-btn.dark {
+    background: var(--bg-primary);
+    border: 1px solid var(--text-primary);
+}
+.theme-toggle-btn.dark .sun {
+    transform: translateY(-50%) scale(0) rotate(90deg);
+    opacity: 0;
+}
+.theme-toggle-btn.dark .moon {
+    transform: translateY(-50%) scale(1) rotate(0deg);
+    opacity: 1;
+}

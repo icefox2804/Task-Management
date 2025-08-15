@@ -1,0 +1,161 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "password123",
+      "email": "admin@taskmanager.com",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "username": "user1",
+      "password": "userpass123",
+      "email": "user1@taskmanager.com",
+      "createdAt": "2024-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "username": "demo",
+      "password": "demo123",
+      "email": "demo@taskmanager.com",
+      "createdAt": "2024-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "0659",
+      "username": "admin1",
+      "email": "example1@gmail.com",
+      "password": "admin123"
+    },
+    {
+      "id": "9b44",
+      "username": "zx",
+      "email": "zxc",
+      "password": "zxc"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "userId": 1,
+      "title": "Setup JSON Server",
+      "description": "Cài đặt và cấu hình JSON Server cho project",
+      "status": "in-progress",
+      "priority": "high",
+      "dueDate": "2024-08-01",
+      "createdAt": "2024-07-25T10:00:00.000Z",
+      "updatedAt": "2025-08-13T18:30:44.973Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "title": "Build React Components",
+      "description": "Tạo các components theo kiến trúc bottom-up",
+      "status": "in-progress",
+      "priority": "high",
+      "dueDate": "2024-08-15",
+      "createdAt": "2024-07-25T11:00:00.000Z",
+      "updatedAt": "2025-08-13T18:30:46.948Z"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "title": "Write Unit Tests",
+      "description": "Tạo test cases cho tất cả components",
+      "status": "in-progress",
+      "priority": "medium",
+      "dueDate": "2024-08-20",
+      "createdAt": "2024-07-25T12:00:00.000Z",
+      "updatedAt": "2025-08-13T18:30:48.975Z"
+    },
+    {
+      "id": "4",
+      "userId": 2,
+      "title": "Learn React Hooks",
+      "description": "Học và thực hành useState, useEffect, useRef",
+      "status": "in-progress",
+      "priority": "high",
+      "dueDate": "2024-08-10",
+      "createdAt": "2024-07-24T09:00:00.000Z",
+      "updatedAt": "2024-07-26T08:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "userId": 2,
+      "title": "Deploy Application",
+      "description": "Deploy ứng dụng lên Vercel hoặc Netlify",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2024-08-25",
+      "createdAt": "2024-07-24T10:00:00.000Z",
+      "updatedAt": "2024-07-24T10:00:00.000Z"
+    },
+    {
+      "id": "9e10",
+      "title": "todo6",
+      "description": "thông tin chi tiết task 7",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2025-08-14",
+      "userId": "1",
+      "createdAt": "2025-08-13T19:22:02.739Z"
+    },
+    {
+      "id": "c9eb",
+      "title": "todo3",
+      "description": "thông tin chi tiết 3",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2025-08-14",
+      "userId": "1",
+      "createdAt": "2025-08-13T20:14:31.649Z"
+    },
+    {
+      "id": "c662",
+      "title": "todo7",
+      "description": "thong tin chi tiet todo7",
+      "status": "in-progress",
+      "priority": "medium",
+      "dueDate": "2025-08-14",
+      "userId": "0659",
+      "createdAt": "2025-08-14T03:31:56.864Z"
+    },
+    {
+      "id": "5c45",
+      "title": "next todo",
+      "description": "thong tin chi tiet",
+      "status": "completed",
+      "priority": "medium",
+      "dueDate": "2025-08-14",
+      "userId": "0659",
+      "createdAt": "2025-08-14T03:35:39.600Z"
+    },
+    {
+      "id": "cdcb",
+      "title": "todo10",
+      "description": "thong tin chi tiet",
+      "status": "completed",
+      "priority": "medium",
+      "dueDate": "2025-08-16",
+      "userId": "0659",
+      "createdAt": "2025-08-15T17:45:41.811Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Development",
+      "color": "#3498db"
+    },
+    {
+      "id": "2",
+      "name": "Learning",
+      "color": "#e74c3c"
+    },
+    {
+      "id": "3",
+      "name": "Personal",
+      "color": "#27ae60"
+    }
+  ]
+}
