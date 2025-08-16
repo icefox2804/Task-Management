@@ -58,8 +58,8 @@ npm start
 
 ## Demo
 
-- **Live demo**: [URL deployed app]
-- **API endpoint**: [URL JSON Server]
+- **Live demo**: [[URL deployed app]](https://task-management-delta-bice.vercel.app/)
+- **API endpoint**: [[URL JSON Server]](https://task-management-api-sepia-five.vercel.app/)
 
 ## Screenshots
 Giao diện Đăng nhập (Theme Sáng & Tối)
