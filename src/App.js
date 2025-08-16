@@ -18,8 +18,7 @@ function App() {
     checkExistingAuth();
   }, []);
 
-  const API_BASE_URL = "http://localhost:3001";
-
+  const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:3001";
   // Kiểm tra phiên đăng nhập đã tồn tại chưa
   // Nếu có, tự động đăng nhập
   // Nếu không, hiển thị form đăng nhập/đăng ký
