@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "db.json",
-      "use": "vercel-json-server"
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/api"
     }
   ]
 }
