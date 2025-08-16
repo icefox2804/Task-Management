@@ -4,6 +4,7 @@ body.light {
   --bg-primary: #ffffff; /* Nền chính (ví dụ: container, card) */
   --bg-secondary: #f5f7fa; /* Nền phụ (ví dụ: body) */
   --bg-footer: #2c3e50; /* Nền của footer */
+  --bg-body: #e7e7e7;
   --text-primary: #2c3e50; /* Màu chữ chính */
   --text-secondary: #5a6a7a; /* Màu chữ phụ */
   --text-on-dark-bg: #ffffff; /* Màu chữ trên nền tối (như footer, button) */
@@ -20,6 +21,7 @@ body.dark {
   --bg-primary: #2d3748;
   --bg-secondary: #1a202c;
   --bg-footer: #1a202c;
+  --bg-body: #293041;
   --text-primary: #f7fafc;
   --text-secondary: #a0aec0;
   --text-on-dark-bg: #f7fafc;

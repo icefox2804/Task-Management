@@ -1,9 +1,11 @@
 .task-management {
     min-height: 100vh;
-    background: url(https://t3.ftcdn.net/jpg/03/47/91/18/360_F_347911899_lGRCgiWEGRzdJRVwWLWYThcV1B9eRQx2.jpg);
+    background: var(--bg-body);
     background-size: cover;
     background-repeat: no-repeat;
+    backdrop-filter: blur(50px);
     padding: 2rem;
+    border-radius: 16px;
 }
 
 /* Header */
