@@ -1,5 +1,3 @@
-// src/components/Tasks/TaskForm.jsx
-
 import React, { useState, useEffect } from "react";
 import { validateTask } from "../../utils/validation";
 import "../../styles/TaskForm.css";
@@ -82,9 +80,6 @@ export default function TaskForm({
       />
       {errors.description && <p className="form-error">{errors.description}</p>}
 
-      {/* =============================================================== */}
-      {/* CÁC TRƯỜNG BỊ THIẾU ĐƯỢC THÊM VÀO ĐÂY */}
-      {/* =============================================================== */}
       <div className="form-row">
         {/* --- TRƯỜNG STATUS --- */}
         <div className="form-field">
@@ -118,7 +113,7 @@ export default function TaskForm({
           {errors.priority && <p className="form-error">{errors.priority}</p>}
         </div>
 
-        {/* --- TRƯỜNG DUE DATE --- */}
+        {/* --- DATE --- */}
         <div className="form-field">
           <label htmlFor="dueDate"> Ngày hết hạn </label>
           <input
