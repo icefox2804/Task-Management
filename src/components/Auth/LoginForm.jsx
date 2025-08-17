@@ -146,6 +146,19 @@ function LoginForm({ onLogin, isPanelActive }) {
             "Đăng nhập"
           )}
         </button>
+        <div className="mobile-switch">
+          Chưa có tài khoản?
+          <button
+            type="button"
+            onClick={() =>
+              document
+                .getElementById("auth-container")
+                .classList.add("right-panel-active")
+            }
+          >
+            Đăng ký
+          </button>
+        </div>
       </form>
     </div>
   );

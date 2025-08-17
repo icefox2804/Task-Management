@@ -128,6 +128,20 @@ function SignUpForm({ onSignUp, isPanelActive }) {
         <button type="submit" className="submit-btn" disabled={isLoading}>
           {isLoading ? <LoadingSpinner size="small" /> : "Đăng ký"}
         </button>
+        {/* Nút chuyển đổi giữa đăng ký và đăng nhập */}
+        <div className="mobile-switch">
+          Đã có tài khoản?
+          <button
+            type="button"
+            onClick={() =>
+              document
+                .getElementById("auth-container")
+                .classList.remove("right-panel-active")
+            }
+          >
+            Đăng nhập
+          </button>
+        </div>
       </form>
     </div>
   );
